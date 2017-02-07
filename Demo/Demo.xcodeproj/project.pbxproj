@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023625B81E49621B007DA93E /* ZCSlotMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 023625B71E49621B007DA93E /* ZCSlotMachine.m */; };
 		747C9F61178D719D003218D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747C9F60178D719D003218D0 /* UIKit.framework */; };
 		747C9F63178D719D003218D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747C9F62178D719D003218D0 /* Foundation.framework */; };
 		747C9F65178D719D003218D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747C9F64178D719D003218D0 /* CoreGraphics.framework */; };
@@ -16,7 +17,6 @@
 		747C9F73178D719D003218D0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 747C9F72178D719D003218D0 /* Default.png */; };
 		747C9F75178D719D003218D0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 747C9F74178D719D003218D0 /* Default@2x.png */; };
 		747C9F77178D719D003218D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 747C9F76178D719D003218D0 /* Default-568h@2x.png */; };
-		747C9F80178D7215003218D0 /* ZCSlotMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 747C9F7F178D7215003218D0 /* ZCSlotMachine.m */; };
 		74EADDE2178E7C9C003AE0BF /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EADDE1178E7C9C003AE0BF /* DemoViewController.m */; };
 		74EADDE6178E7E4A003AE0BF /* SlotMachineBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EADDE5178E7E4A003AE0BF /* SlotMachineBackground@2x.png */; };
 		74EADDE8178E7EC5003AE0BF /* SlotMachineCover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EADDE7178E7EC5003AE0BF /* SlotMachineCover@2x.png */; };
@@ -30,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023625B61E49621B007DA93E /* ZCSlotMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSlotMachine.h; sourceTree = "<group>"; };
+		023625B71E49621B007DA93E /* ZCSlotMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSlotMachine.m; sourceTree = "<group>"; };
 		747C9F5D178D719D003218D0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		747C9F60178D719D003218D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		747C9F62178D719D003218D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,8 +45,6 @@
 		747C9F72178D719D003218D0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		747C9F74178D719D003218D0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		747C9F76178D719D003218D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		747C9F7E178D7215003218D0 /* ZCSlotMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCSlotMachine.h; path = ../ZCSlotMachine/ZCSlotMachine.h; sourceTree = "<group>"; };
-		747C9F7F178D7215003218D0 /* ZCSlotMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCSlotMachine.m; path = ../ZCSlotMachine/ZCSlotMachine.m; sourceTree = "<group>"; };
 		74EADDE0178E7C9C003AE0BF /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		74EADDE1178E7C9C003AE0BF /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		74EADDE5178E7E4A003AE0BF /* SlotMachineBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SlotMachineBackground@2x.png"; sourceTree = "<group>"; };
@@ -73,10 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023625B51E49621B007DA93E /* ZCSlotMachine */ = {
+			isa = PBXGroup;
+			children = (
+				023625B61E49621B007DA93E /* ZCSlotMachine.h */,
+				023625B71E49621B007DA93E /* ZCSlotMachine.m */,
+			);
+			path = ZCSlotMachine;
+			sourceTree = "<group>";
+		};
 		747C9F54178D719D003218D0 = {
 			isa = PBXGroup;
 			children = (
-				747C9F7D178D7204003218D0 /* ZCSlotMachine */,
+				023625B51E49621B007DA93E /* ZCSlotMachine */,
 				747C9F66178D719D003218D0 /* Demo */,
 				747C9F5F178D719D003218D0 /* Frameworks */,
 				747C9F5E178D719D003218D0 /* Products */,
@@ -127,15 +136,6 @@
 				747C9F76178D719D003218D0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		747C9F7D178D7204003218D0 /* ZCSlotMachine */ = {
-			isa = PBXGroup;
-			children = (
-				747C9F7E178D7215003218D0 /* ZCSlotMachine.h */,
-				747C9F7F178D7215003218D0 /* ZCSlotMachine.m */,
-			);
-			name = ZCSlotMachine;
 			sourceTree = "<group>";
 		};
 		74EADDE3178E7E32003AE0BF /* Resources */ = {
@@ -236,7 +236,7 @@
 			files = (
 				747C9F6D178D719D003218D0 /* main.m in Sources */,
 				747C9F71178D719D003218D0 /* AppDelegate.m in Sources */,
-				747C9F80178D7215003218D0 /* ZCSlotMachine.m in Sources */,
+				023625B81E49621B007DA93E /* ZCSlotMachine.m in Sources */,
 				74EADDE2178E7C9C003AE0BF /* DemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
